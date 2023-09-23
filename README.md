@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@esm/index.mjs';
+import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@v0.1.0-esm/index.mjs';
 ```
 
 #### isFunctionArray( value )
@@ -78,7 +78,7 @@ var bool = isFunctionArray( [ beep, boop ] );
 <body>
 <script type="module">
 
-import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@esm/index.mjs';
+import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@v0.1.0-esm/index.mjs';
 
 function beep() {
     console.log( 'beep' );
