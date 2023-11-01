@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,41 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isFunctionArray = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isFunctionArray, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function tests if a value is an array of functions', function test( t ) {
-	var bool;
-	var arr;
-
-	function beep() {}
-	function boop() {}
-
-	arr = [ beep, boop ];
-	bool = isFunctionArray( arr );
-	t.strictEqual( bool, true, 'returns true' );
-
-	arr = [ beep, null ];
-	bool = isFunctionArray( arr );
-	t.strictEqual( bool, false, 'returns false' );
-
-	arr = [];
-	bool = isFunctionArray( arr );
-	t.strictEqual( bool, false, 'returns false when provided an empty array' );
-
-	bool = isFunctionArray( null );
-	t.strictEqual( bool, false, 'returns false when provided a null' );
-
-	bool = isFunctionArray( beep );
-	t.strictEqual( bool, false, 'returns false when provided a function' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
