@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-function-array/tags). For example,
+
+```javascript
 import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@v0.2.0-esm/index.mjs';
 ```
 
@@ -78,7 +83,7 @@ var bool = isFunctionArray( [ beep, boop ] );
 <body>
 <script type="module">
 
-import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@v0.2.0-esm/index.mjs';
+import isFunctionArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function-array@esm/index.mjs';
 
 function beep() {
     console.log( 'beep' );
